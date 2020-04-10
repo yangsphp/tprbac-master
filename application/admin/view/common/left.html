@@ -1,0 +1,24 @@
+<div class="main-layout-side">
+    <div class="m-logo">
+    </div>
+    <ul class="layui-nav layui-nav-tree" lay-filter="leftNav">
+        <?php foreach($auth as $k => $v){?>
+        <li class="layui-nav-item <?php if($k == 0){echo "layui-nav-itemed";}?>">
+            <?php if(isset($v['children']) && count($v['children'])){?>
+            <a href="javascript:;"><i class="iconfont">&#xe607;</i>{$v['name']}</a>
+            <dl class="layui-nav-child">
+                <?php foreach($v['children'] as $k1 => $v1){?>
+                <dd>
+                    <a href="javascript:;" data-url="{:url($v1['url'])}" data-id='{$v1["id"]}' data-text="{$v1['name']}">
+                        <span class="l-line"></span>{$v1['name']}
+                    </a>
+                </dd>
+                <?php }?>
+            </dl>
+            <?php }else{?>
+            <a href="javascript:;" data-url="{:url($v['url'])}" data-id='{$v["id"]}' data-text="{$v['name']}"><i class="iconfont">&#xe60b;</i>{$v['name']}</a>
+            <?php }?>
+        </li>
+        <?php }?>
+    </ul>
+</div>
