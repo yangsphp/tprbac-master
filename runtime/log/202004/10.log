@@ -1,0 +1,94 @@
+---------------------------------------------------------------
+[ 2020-04-10T13:06:43+08:00 ] 0.0.0.0 GET localhost/tprbac/public/admin/index
+[运行时间：1.163067s] [吞吐率：0.86req/s] [内存消耗：3,099.25kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\tprbac\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tprbac/public/admin/user/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=q6m9fjoboij6856vruap808is7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\tprbac\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\tprbac\public/../application/admin\view\index\index.html [ array (
+  0 => 'roleName',
+  1 => 'auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.019002s ]
+---------------------------------------------------------------
+[ 2020-04-10T13:06:44+08:00 ] 0.0.0.0 GET localhost/tprbac/public/admin/index/welcome.html
+[运行时间：0.170010s] [吞吐率：5.88req/s] [内存消耗：3,045.52kb] [文件加载：64]
+[ info ] [ LANG ] D:\phpStudy\WWW\tprbac\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tprbac/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=q6m9fjoboij6856vruap808is7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\tprbac\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\tprbac\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'roleName',
+  1 => 'auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.000000s ]

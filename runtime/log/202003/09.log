@@ -1,0 +1,299 @@
+---------------------------------------------------------------
+[ 2020-03-09T20:00:30+08:00 ] 0.0.0.0 GET localhost/tpshop/public/
+[运行时间：0.986056s] [吞吐率：1.01req/s] [内存消耗：1,927.49kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=4871092224',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\tpshop\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/index\view\index\index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-03-09T20:00:30+08:00 ] 0.0.0.0 GET localhost/tpshop/public/goto/my-65537.js
+[运行时间：0.086005s] [吞吐率：11.63req/s] [内存消耗：1,479.18kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'goto',
+    1 => 'my-65537.js',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/tpshop/public/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=4871092224',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-03-09T20:00:30+08:00 ] 0.0.0.0 GET localhost/tpshop/public/images/js/count_zixun.js
+[运行时间：0.032001s] [吞吐率：31.25req/s] [内存消耗：1,479.22kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'js',
+    2 => 'count_zixun.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/tpshop/public/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=4871092224',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-03-09T20:00:32+08:00 ] 0.0.0.0 GET localhost/tpshop/public/goto/my-65537.js
+[运行时间：0.065004s] [吞吐率：15.38req/s] [内存消耗：1,479.18kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'goto',
+    1 => 'my-65537.js',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/tpshop/public/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=4871092224',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-03-09T20:00:32+08:00 ] 0.0.0.0 GET localhost/tpshop/public/images/js/count_zixun.js
+[运行时间：0.037002s] [吞吐率：27.03req/s] [内存消耗：1,479.22kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'js',
+    2 => 'count_zixun.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/tpshop/public/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=4871092224',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-03-09T20:00:38+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin
+[运行时间：0.377021s] [吞吐率：2.65req/s] [内存消耗：2,843.90kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=4871092224',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\tpshop\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.069004s ] mysql:host=127.0.0.1;dbname=car;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `car_admin` [ RunTime:0.155009s ]
+[ sql ] [ SQL ] SELECT * FROM `car_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.049003s ]
+[ error ] [0]模板文件不存在:D:\phpStudy\WWW\tpshop\public/../application/admin\view\index\index.htm[D:\phpStudy\WWW\tpshop\thinkphp\library\think\view\driver\Think.php:82]
+---------------------------------------------------------------
+[ 2020-03-09T20:01:59+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin
+[运行时间：0.105006s] [吞吐率：9.52req/s] [内存消耗：2,961.13kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=4871092224',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\tpshop\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=car;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `car_admin` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `car_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2020-03-09T21:34:24+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin
+[运行时间：1.449083s] [吞吐率：0.69req/s] [内存消耗：2,823.62kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=4871092224',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\tpshop\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.030001s ] mysql:host=127.0.0.1;dbname=car;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `car_admin` [ RunTime:0.295017s ]
+[ sql ] [ SQL ] SELECT * FROM `car_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.004000s ]
+---------------------------------------------------------------
+[ 2020-03-09T21:42:12+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin
+[运行时间：6.394366s] [吞吐率：0.16req/s] [内存消耗：2,823.55kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=4871092224',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\tpshop\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.265015s ] mysql:host=127.0.0.1;dbname=car;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `car_admin` [ RunTime:0.997057s ]
+[ sql ] [ SQL ] SELECT * FROM `car_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2020-03-09T21:49:45+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin
+[运行时间：0.591033s] [吞吐率：1.69req/s] [内存消耗：2,823.89kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=1|0; pgv_pvi=4871092224',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\tpshop\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=car;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `car_admin` [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SELECT * FROM `car_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000000s ]

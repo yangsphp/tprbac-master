@@ -1,0 +1,3510 @@
+---------------------------------------------------------------
+[ 2020-04-08T19:25:19+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/back_op.html?tables=tp_admin,tp_admin_log,tp_auth,tp_back_up,tp_role
+[运行时间：1.919110s] [吞吐率：0.52req/s] [内存消耗：3,138.30kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'back_op',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'tables' => 'tp_admin,tp_admin_log,tp_auth,tp_back_up,tp_role',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->back_op[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.182010s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.082005s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.080005s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.021001s ]
+[ sql ] [ SQL ] select * from tp_admin [ RunTime:0.001000s ]
+[ sql ] [ SQL ] desc tp_admin [ RunTime:0.011001s ]
+[ sql ] [ SQL ] select * from tp_admin_log [ RunTime:0.121006s ]
+[ sql ] [ SQL ] desc tp_admin_log [ RunTime:0.014001s ]
+[ sql ] [ SQL ] select * from tp_auth [ RunTime:0.001000s ]
+[ sql ] [ SQL ] desc tp_auth [ RunTime:0.012001s ]
+[ sql ] [ SQL ] select * from tp_back_up [ RunTime:0.059003s ]
+[ sql ] [ SQL ] desc tp_back_up [ RunTime:0.014001s ]
+[ sql ] [ SQL ] select * from tp_role [ RunTime:0.000000s ]
+[ sql ] [ SQL ] desc tp_role [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_back_up` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] INSERT INTO `tp_back_up` (`user_id` , `name` , `table` , `path` , `size` , `date_entered`) VALUES (1 , '20200408192518.sql' , 'tp_admin,tp_admin_log,tp_auth,tp_back_up,tp_role' , '/upload/db/20200408192518.sql' , '5.48KB' , '2020-04-08 19:25:18') [ RunTime:0.027001s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+[ error ] [0]variable type error： array[D:\phpStudy\WWW\tpshop\thinkphp\library\think\Response.php:316]
+---------------------------------------------------------------
+[ 2020-04-08T19:25:22+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/index
+[运行时间：0.220013s] [吞吐率：4.55req/s] [内存消耗：3,099.61kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tpshop/public/admin/user/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\tpshop\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/admin\view\index\index.html [ array (
+  0 => 'roleName',
+  1 => 'auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2020-04-08T19:25:23+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/index/welcome.html
+[运行时间：0.194011s] [吞吐率：5.15req/s] [内存消耗：3,045.99kb] [文件加载：64]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tpshop/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\tpshop\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'roleName',
+  1 => 'auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2020-04-08T19:25:26+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/index.html
+[运行时间：0.181011s] [吞吐率：5.52req/s] [内存消耗：3,184.23kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tpshop/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->index[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/admin\view\database\index.html [ array (
+  0 => 'roleName',
+  1 => 'auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001001s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T19:25:27+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/lst.html?page=1&limit=10
+[运行时间：0.131008s] [吞吐率：7.63req/s] [内存消耗：3,087.60kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->lst[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show tables from tpshop [ RunTime:0.002000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_admin' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_admin_log' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_auth' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_back_up' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_role' [ RunTime:0.002001s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T19:25:27+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/backup.html?page=1&limit=10
+[运行时间：0.182010s] [吞吐率：5.49req/s] [内存消耗：3,120.80kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'backup',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->backup[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_back_up` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `b`.*,`username` FROM `tp_back_up` `b` LEFT JOIN `tp_admin` `a` ON `a`.`id`=`b`.`user_id` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_back_up` LIMIT 1 [ RunTime:0.016001s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T19:28:58+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/index.html
+[运行时间：0.151008s] [吞吐率：6.62req/s] [内存消耗：3,340.40kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tpshop/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->index[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/admin\view\database\index.html [ array (
+  0 => 'roleName',
+  1 => 'auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T19:29:13+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/index.html
+[运行时间：0.128007s] [吞吐率：7.81req/s] [内存消耗：3,184.47kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tpshop/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->index[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/admin\view\database\index.html [ array (
+  0 => 'roleName',
+  1 => 'auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.045003s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T19:30:13+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/index.html
+[运行时间：0.094005s] [吞吐率：10.64req/s] [内存消耗：3,340.23kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tpshop/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->index[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/admin\view\database\index.html [ array (
+  0 => 'roleName',
+  1 => 'auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T19:30:14+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/lst.html?page=1&limit=10
+[运行时间：0.109007s] [吞吐率：9.17req/s] [内存消耗：3,087.60kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->lst[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show tables from tpshop [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_admin' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_admin_log' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_auth' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_back_up' [ RunTime:0.001001s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_role' [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T19:30:14+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/backup.html?page=1&limit=10
+[运行时间：0.188010s] [吞吐率：5.32req/s] [内存消耗：3,120.80kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'backup',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->backup[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_back_up` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `b`.*,`username` FROM `tp_back_up` `b` LEFT JOIN `tp_admin` `a` ON `a`.`id`=`b`.`user_id` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_back_up` LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T19:31:26+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/index.html
+[运行时间：0.122007s] [吞吐率：8.20req/s] [内存消耗：3,340.28kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tpshop/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->index[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/admin\view\database\index.html [ array (
+  0 => 'roleName',
+  1 => 'auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.002000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T19:31:27+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/lst.html?page=1&limit=10
+[运行时间：0.122007s] [吞吐率：8.20req/s] [内存消耗：3,087.60kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->lst[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show tables from tpshop [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_admin' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_admin_log' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_auth' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_back_up' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_role' [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T19:31:27+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/backup.html?page=1&limit=10
+[运行时间：0.203011s] [吞吐率：4.93req/s] [内存消耗：3,120.91kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'backup',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->backup[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_back_up` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `b`.*,`username` FROM `tp_back_up` `b` LEFT JOIN `tp_admin` `a` ON `a`.`id`=`b`.`user_id` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_back_up` LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T19:31:45+08:00 ] 0.0.0.0 POST localhost/tpshop/public/admin/database/delback_op.html?id=19
+[运行时间：0.145008s] [吞吐率：6.90req/s] [内存消耗：3,075.09kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'delback_op',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'id' => '19',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T19:43:00+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/index.html
+[运行时间：0.106006s] [吞吐率：9.43req/s] [内存消耗：3,187.30kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tpshop/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->index[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/admin\view\database\index.html [ array (
+  0 => 'roleName',
+  1 => 'auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T19:43:01+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/lst.html?page=1&limit=10
+[运行时间：0.124007s] [吞吐率：8.06req/s] [内存消耗：3,090.39kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->lst[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] show tables from tpshop [ RunTime:0.001001s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_admin' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_admin_log' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_auth' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_back_up' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_role' [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T19:43:01+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/backup.html?page=1&limit=10
+[运行时间：0.219013s] [吞吐率：4.57req/s] [内存消耗：3,125.68kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'backup',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->backup[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_back_up` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `b`.*,`username` FROM `tp_back_up` `b` LEFT JOIN `tp_admin` `a` ON `a`.`id`=`b`.`user_id` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_back_up` LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T19:43:10+08:00 ] 0.0.0.0 POST localhost/tpshop/public/admin/database/delback_op.html?id=17
+[运行时间：0.213012s] [吞吐率：4.69req/s] [内存消耗：3,212.13kb] [文件加载：69]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'delback_op',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'id' => '17',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->delback_op[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_back_up` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_back_up` WHERE  `id` = 17 LIMIT 1 [ RunTime:0.033002s ]
+[ sql ] [ SQL ] DELETE FROM `tp_back_up`    WHERE  `id` IN (17) [ RunTime:0.046003s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T19:43:10+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/lst.html?page=1&limit=10
+[运行时间：0.118007s] [吞吐率：8.47req/s] [内存消耗：3,090.39kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->lst[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show tables from tpshop [ RunTime:0.002000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_admin' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_admin_log' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_auth' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_back_up' [ RunTime:0.001001s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_role' [ RunTime:0.002000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T19:43:27+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/index.html
+[运行时间：0.111006s] [吞吐率：9.01req/s] [内存消耗：3,187.31kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tpshop/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->index[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/admin\view\database\index.html [ array (
+  0 => 'roleName',
+  1 => 'auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T19:43:27+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/lst.html?page=1&limit=10
+[运行时间：0.115007s] [吞吐率：8.70req/s] [内存消耗：3,090.39kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->lst[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show tables from tpshop [ RunTime:0.001001s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_admin' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_admin_log' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_auth' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_back_up' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_role' [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T19:43:27+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/backup.html?page=1&limit=10
+[运行时间：0.190011s] [吞吐率：5.26req/s] [内存消耗：3,125.66kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'backup',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->backup[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_back_up` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `b`.*,`username` FROM `tp_back_up` `b` LEFT JOIN `tp_admin` `a` ON `a`.`id`=`b`.`user_id` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_back_up` LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:00:49+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/index.html
+[运行时间：0.109006s] [吞吐率：9.17req/s] [内存消耗：3,348.38kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tpshop/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->index[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/admin\view\database\index.html [ array (
+  0 => 'roleName',
+  1 => 'auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:00:59+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/index.html
+[运行时间：0.100005s] [吞吐率：10.00req/s] [内存消耗：3,190.63kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tpshop/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->index[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/admin\view\database\index.html [ array (
+  0 => 'roleName',
+  1 => 'auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:02:20+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/index.html
+[运行时间：0.103006s] [吞吐率：9.71req/s] [内存消耗：3,348.41kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tpshop/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->index[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/admin\view\database\index.html [ array (
+  0 => 'roleName',
+  1 => 'auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:02:20+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/lst.html?page=1&limit=10
+[运行时间：0.139007s] [吞吐率：7.19req/s] [内存消耗：3,093.77kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->lst[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show tables from tpshop [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_admin' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_admin_log' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_auth' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_back_up' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_role' [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:02:21+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/backup.html?page=1&limit=10
+[运行时间：0.234013s] [吞吐率：4.27req/s] [内存消耗：3,129.03kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'backup',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->backup[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_back_up` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT `b`.*,`username` FROM `tp_back_up` `b` LEFT JOIN `tp_admin` `a` ON `a`.`id`=`b`.`user_id` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_back_up` LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:02:33+08:00 ] 0.0.0.0 POST localhost/tpshop/public/admin/database/callback_op.html?id=19
+[运行时间：0.142008s] [吞吐率：7.04req/s] [内存消耗：3,103.08kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'callback_op',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'id' => '19',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->callback_op[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_back_up` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_back_up` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:03:26+08:00 ] 0.0.0.0 POST localhost/tpshop/public/admin/database/callback_op.html?id=19
+[运行时间：0.120006s] [吞吐率：8.33req/s] [内存消耗：3,103.00kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'callback_op',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'id' => '19',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->callback_op[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_back_up` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_back_up` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:08:11+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/index.html
+[运行时间：0.116007s] [吞吐率：8.62req/s] [内存消耗：3,192.23kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tpshop/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->index[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/admin\view\database\index.html [ array (
+  0 => 'roleName',
+  1 => 'auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:08:12+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/lst.html?page=1&limit=10
+[运行时间：0.119007s] [吞吐率：8.40req/s] [内存消耗：3,095.30kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->lst[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show tables from tpshop [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_admin' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_admin_log' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_auth' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_back_up' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_role' [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:08:12+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/backup.html?page=1&limit=10
+[运行时间：0.198012s] [吞吐率：5.05req/s] [内存消耗：3,130.54kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'backup',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->backup[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_back_up` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `b`.*,`username` FROM `tp_back_up` `b` LEFT JOIN `tp_admin` `a` ON `a`.`id`=`b`.`user_id` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_back_up` LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:08:18+08:00 ] 0.0.0.0 POST localhost/tpshop/public/admin/database/callback_op.html?id=19
+[运行时间：2.048117s] [吞吐率：0.49req/s] [内存消耗：3,130.97kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'callback_op',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'id' => '19',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->callback_op[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_back_up` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_back_up` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] truncate tp_admin [ RunTime:0.001000s ]
+[ sql ] [ SQL ] truncate tp_admin_log [ RunTime:0.002000s ]
+[ sql ] [ SQL ] truncate tp_auth [ RunTime:0.001000s ]
+[ sql ] [ SQL ] truncate tp_back_up [ RunTime:1.904109s ]
+[ sql ] [ SQL ] truncate tp_role [ RunTime:0.002000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+[ error ] [10501]SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.[D:\phpStudy\WWW\tpshop\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2020-04-08T20:08:34+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/index.html
+[运行时间：1.280074s] [吞吐率：0.78req/s] [内存消耗：2,974.06kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tpshop/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [8]Trying to get property of non-object[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:76]
+---------------------------------------------------------------
+[ 2020-04-08T20:08:38+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/index.html
+[运行时间：0.066004s] [吞吐率：15.15req/s] [内存消耗：2,973.87kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tpshop/public/admin/database/dict.html?table=tp_admin',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [8]Trying to get property of non-object[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:76]
+---------------------------------------------------------------
+[ 2020-04-08T20:08:38+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/index/welcome.html
+[运行时间：0.109006s] [吞吐率：9.17req/s] [内存消耗：2,937.09kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tpshop/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+[ error ] [8]Trying to get property of non-object[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:76]
+---------------------------------------------------------------
+[ 2020-04-08T20:08:41+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/index
+[运行时间：0.078004s] [吞吐率：12.82req/s] [内存消耗：2,937.02kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tpshop/public/admin/user/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]Trying to get property of non-object[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:76]
+---------------------------------------------------------------
+[ 2020-04-08T20:11:55+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/index
+[运行时间：0.138008s] [吞吐率：7.25req/s] [内存消耗：3,099.84kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tpshop/public/admin/user/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\tpshop\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/admin\view\index\index.html [ array (
+  0 => 'roleName',
+  1 => 'auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2020-04-08T20:11:56+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/index/welcome.html
+[运行时间：0.165009s] [吞吐率：6.06req/s] [内存消耗：3,045.98kb] [文件加载：64]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tpshop/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\tpshop\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'roleName',
+  1 => 'auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2020-04-08T20:11:58+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/index.html
+[运行时间：0.412023s] [吞吐率：2.43req/s] [内存消耗：3,191.94kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tpshop/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->index[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/admin\view\database\index.html [ array (
+  0 => 'roleName',
+  1 => 'auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.300017s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:11:59+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/lst.html?page=1&limit=10
+[运行时间：0.154009s] [吞吐率：6.49req/s] [内存消耗：3,095.28kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->lst[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] show tables from tpshop [ RunTime:0.000000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_admin' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_admin_log' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_auth' [ RunTime:0.001001s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_back_up' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_role' [ RunTime:0.002000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:11:59+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/backup.html?page=1&limit=10
+[运行时间：0.247014s] [吞吐率：4.05req/s] [内存消耗：3,130.52kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'backup',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->backup[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_back_up` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `b`.*,`username` FROM `tp_back_up` `b` LEFT JOIN `tp_admin` `a` ON `a`.`id`=`b`.`user_id` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_back_up` LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:16:10+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/index
+[运行时间：0.122007s] [吞吐率：8.20req/s] [内存消耗：3,099.84kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tpshop/public/admin/user/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\tpshop\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/admin\view\index\index.html [ array (
+  0 => 'roleName',
+  1 => 'auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2020-04-08T20:16:14+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/index/welcome.html
+[运行时间：0.146009s] [吞吐率：6.85req/s] [内存消耗：3,045.98kb] [文件加载：64]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tpshop/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\tpshop\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'roleName',
+  1 => 'auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2020-04-08T20:16:17+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/index.html
+[运行时间：0.121007s] [吞吐率：8.26req/s] [内存消耗：3,192.20kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tpshop/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->index[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/admin\view\database\index.html [ array (
+  0 => 'roleName',
+  1 => 'auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:16:22+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/lst.html?page=1&limit=10
+[运行时间：0.126007s] [吞吐率：7.94req/s] [内存消耗：3,095.56kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->lst[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show tables from tpshop [ RunTime:0.000000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_admin' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_admin_log' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_auth' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_back_up' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_role' [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:16:22+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/backup.html?page=1&limit=10
+[运行时间：0.206012s] [吞吐率：4.85req/s] [内存消耗：3,130.81kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'backup',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->backup[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_back_up` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `b`.*,`username` FROM `tp_back_up` `b` LEFT JOIN `tp_admin` `a` ON `a`.`id`=`b`.`user_id` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_back_up` LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:16:30+08:00 ] 0.0.0.0 POST localhost/tpshop/public/admin/database/callback_op.html?id=18
+[运行时间：3.780216s] [吞吐率：0.26req/s] [内存消耗：3,131.85kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'callback_op',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'id' => '18',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->callback_op[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_back_up` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_back_up` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] truncate tp_admin [ RunTime:0.002001s ]
+[ sql ] [ SQL ] insert into `tp_admin` (`id`,`username`,`password`,`salt`,`date_entered`,`login_entered`,`last_login_entered`,`login_ip`,`role_id`,`status`,`times`) values ('1','admin','ef0fdc8b1d6c53a971dbe905e4393018','ABCDE','2019-08-20 13:07:38','2020-04-03 21:05:07','2020-03-30 19:31:58','0.0.0.0','1','1','11'); [ RunTime:0.001000s ]
+[ sql ] [ SQL ] insert into `tp_admin` (`id`,`username`,`password`,`salt`,`date_entered`,`login_entered`,`last_login_entered`,`login_ip`,`role_id`,`status`,`times`) values ('2','yangs','70edc7ddfeb0084679f1d73a646f9478','El2XS','2019-09-23 13:37:29','2020-03-27 19:45:20','2020-03-27 15:15:19','0.0.0.0','2','1','6'); [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty[D:\phpStudy\WWW\tpshop\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2020-04-08T20:16:38+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/index.html
+[运行时间：0.112006s] [吞吐率：8.93req/s] [内存消耗：3,192.45kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tpshop/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->index[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/admin\view\database\index.html [ array (
+  0 => 'roleName',
+  1 => 'auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:16:38+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/lst.html?page=1&limit=10
+[运行时间：0.157009s] [吞吐率：6.37req/s] [内存消耗：3,095.56kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->lst[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show tables from tpshop [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_admin' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_admin_log' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_auth' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_back_up' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_role' [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:16:39+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/backup.html?page=1&limit=10
+[运行时间：0.241014s] [吞吐率：4.15req/s] [内存消耗：3,130.73kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'backup',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->backup[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_back_up` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT `b`.*,`username` FROM `tp_back_up` `b` LEFT JOIN `tp_admin` `a` ON `a`.`id`=`b`.`user_id` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_back_up` LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:16:47+08:00 ] 0.0.0.0 POST localhost/tpshop/public/admin/database/callback_op.html?id=18
+[运行时间：1.697098s] [吞吐率：0.59req/s] [内存消耗：3,131.85kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'callback_op',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'id' => '18',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->callback_op[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:1.556089s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_back_up` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_back_up` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] truncate tp_admin [ RunTime:0.002000s ]
+[ sql ] [ SQL ] insert into `tp_admin` (`id`,`username`,`password`,`salt`,`date_entered`,`login_entered`,`last_login_entered`,`login_ip`,`role_id`,`status`,`times`) values ('1','admin','ef0fdc8b1d6c53a971dbe905e4393018','ABCDE','2019-08-20 13:07:38','2020-04-03 21:05:07','2020-03-30 19:31:58','0.0.0.0','1','1','11'); [ RunTime:0.001000s ]
+[ sql ] [ SQL ] insert into `tp_admin` (`id`,`username`,`password`,`salt`,`date_entered`,`login_entered`,`last_login_entered`,`login_ip`,`role_id`,`status`,`times`) values ('2','yangs','70edc7ddfeb0084679f1d73a646f9478','El2XS','2019-09-23 13:37:29','2020-03-27 19:45:20','2020-03-27 15:15:19','0.0.0.0','2','1','6'); [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty[D:\phpStudy\WWW\tpshop\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2020-04-08T20:18:15+08:00 ] 0.0.0.0 POST localhost/tpshop/public/admin/database/callback_op.html?id=18
+[运行时间：0.142009s] [吞吐率：7.04req/s] [内存消耗：3,130.88kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'callback_op',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'id' => '18',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->callback_op[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_back_up` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_back_up` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] truncate tp_admin [ RunTime:0.002000s ]
+[ sql ] [ SQL ] insert into `tp_admin` (`id`,`username`,`password`,`salt`,`date_entered`,`login_entered`,`last_login_entered`,`login_ip`,`role_id`,`status`,`times`) values ('1','admin','ef0fdc8b1d6c53a971dbe905e4393018','ABCDE','2019-08-20 13:07:38','2020-04-03 21:05:07','2020-03-30 19:31:58','0.0.0.0','1','1','11'); [ RunTime:0.001000s ]
+[ sql ] [ SQL ] insert into `tp_admin` (`id`,`username`,`password`,`salt`,`date_entered`,`login_entered`,`last_login_entered`,`login_ip`,`role_id`,`status`,`times`) values ('2','yangs','70edc7ddfeb0084679f1d73a646f9478','El2XS','2019-09-23 13:37:29','2020-03-27 19:45:20','2020-03-27 15:15:19','0.0.0.0','2','1','6'); [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:18:15+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/index.html
+[运行时间：0.136008s] [吞吐率：7.35req/s] [内存消耗：3,192.50kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->index[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/admin\view\database\index.html [ array (
+  0 => 'roleName',
+  1 => 'auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:18:15+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/lst.html?page=1&limit=10
+[运行时间：0.174010s] [吞吐率：5.75req/s] [内存消耗：3,095.58kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->lst[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.019002s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show tables from tpshop [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_admin' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_admin_log' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_auth' [ RunTime:0.001001s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_back_up' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_role' [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:18:16+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/backup.html?page=1&limit=10
+[运行时间：0.271015s] [吞吐率：3.69req/s] [内存消耗：3,130.81kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'backup',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->backup[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_back_up` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `b`.*,`username` FROM `tp_back_up` `b` LEFT JOIN `tp_admin` `a` ON `a`.`id`=`b`.`user_id` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_back_up` LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:18:25+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/role/index.html
+[运行时间：0.617035s] [吞吐率：1.62req/s] [内存消耗：3,171.00kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'role',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tpshop/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Role->index[ D:\phpStudy\WWW\tpshop\application\admin\controller\Role.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/admin\view\role\index.html [ array (
+  0 => 'roleName',
+  1 => 'auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: role[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:18:25+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/role/lst.html?page=1&limit=10
+[运行时间：0.140008s] [吞吐率：7.14req/s] [内存消耗：3,070.98kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'role',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/role/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Role->lst[ D:\phpStudy\WWW\tpshop\application\admin\controller\Role.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `is_deleted` = 0 ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_role` WHERE  `is_deleted` = 0 LIMIT 1 [ RunTime:0.017001s ]
+[ error ] [8]未定义数组索引: role[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:18:28+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/menu/index.html
+[运行时间：0.971055s] [吞吐率：1.03req/s] [内存消耗：1,826.86kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'menu',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tpshop/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Menu->index[ D:\phpStudy\WWW\tpshop\application\admin\controller\Menu.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/admin\view\menu\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-04-08T20:18:28+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/menu/lst.html?page=1&limit=10
+[运行时间：0.122007s] [吞吐率：8.20req/s] [内存消耗：2,985.77kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'menu',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/menu/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\admin\controller\Menu->lst[ D:\phpStudy\WWW\tpshop\application\admin\controller\Menu.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.055003s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` ORDER BY `sort` ASC [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2020-04-08T20:20:07+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/back_op.html?tables=tp_admin
+[运行时间：0.154009s] [吞吐率：6.49req/s] [内存消耗：3,132.59kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'back_op',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'tables' => 'tp_admin',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->back_op[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select * from tp_admin [ RunTime:0.000000s ]
+[ sql ] [ SQL ] desc tp_admin [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_back_up` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] INSERT INTO `tp_back_up` (`user_id` , `name` , `table` , `path` , `size` , `date_entered`) VALUES (1 , '20200408202007.sql' , 'tp_admin' , '/upload/db/20200408202007.sql' , '0.67KB' , '2020-04-08 20:20:07') [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:20:07+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/index.html
+[运行时间：0.129007s] [吞吐率：7.75req/s] [内存消耗：3,192.50kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->index[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/admin\view\database\index.html [ array (
+  0 => 'roleName',
+  1 => 'auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:20:07+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/lst.html?page=1&limit=10
+[运行时间：0.122007s] [吞吐率：8.20req/s] [内存消耗：3,095.58kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->lst[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show tables from tpshop [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_admin' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_admin_log' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_auth' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_back_up' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_role' [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:20:07+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/backup.html?page=1&limit=10
+[运行时间：0.211012s] [吞吐率：4.74req/s] [内存消耗：3,130.86kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'backup',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->backup[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_back_up` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `b`.*,`username` FROM `tp_back_up` `b` LEFT JOIN `tp_admin` `a` ON `a`.`id`=`b`.`user_id` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_back_up` LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:21:04+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/index.html
+[运行时间：0.128007s] [吞吐率：7.81req/s] [内存消耗：3,192.33kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tpshop/public/admin/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->index[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/admin\view\database\index.html [ array (
+  0 => 'roleName',
+  1 => 'auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:21:04+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/lst.html?page=1&limit=10
+[运行时间：0.143008s] [吞吐率：6.99req/s] [内存消耗：3,095.58kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->lst[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] show tables from tpshop [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_admin' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_admin_log' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_auth' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_back_up' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_role' [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:21:05+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/backup.html?page=1&limit=10
+[运行时间：0.233013s] [吞吐率：4.29req/s] [内存消耗：3,130.86kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'backup',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->backup[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_back_up` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `b`.*,`username` FROM `tp_back_up` `b` LEFT JOIN `tp_admin` `a` ON `a`.`id`=`b`.`user_id` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_back_up` LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:21:19+08:00 ] 0.0.0.0 POST localhost/tpshop/public/admin/database/delback_op.html?id=18
+[运行时间：0.144008s] [吞吐率：6.94req/s] [内存消耗：3,217.37kb] [文件加载：69]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'delback_op',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'id' => '18',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->delback_op[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_back_up` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_back_up` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] DELETE FROM `tp_back_up`    WHERE  `id` IN (18) [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:21:19+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/index.html
+[运行时间：0.108006s] [吞吐率：9.26req/s] [内存消耗：3,192.50kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->index[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\tpshop\public/../application/admin\view\database\index.html [ array (
+  0 => 'roleName',
+  1 => 'auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:21:19+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/lst.html?page=1&limit=10
+[运行时间：0.110006s] [吞吐率：9.09req/s] [内存消耗：3,095.58kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->lst[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] show tables from tpshop [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_admin' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_admin_log' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_auth' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_back_up' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show table status from tpshop like 'tp_role' [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
+---------------------------------------------------------------
+[ 2020-04-08T20:21:19+08:00 ] 0.0.0.0 GET localhost/tpshop/public/admin/database/backup.html?page=1&limit=10
+[运行时间：0.209012s] [吞吐率：4.78req/s] [内存消耗：3,130.81kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'backup',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://localhost/tpshop/public/admin/database/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=4871092224; PHPSESSID=t2pfil2avkluarimftrkvbbue6; csrf_cookie_yang=d1789914e2e9ddbb86ce97200b08abf6; ci_session=p4isou43djr6ffffd2l4pt9iculf5473',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->backup[ D:\phpStudy\WWW\tpshop\application\admin\controller\Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_role` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth` WHERE  (  is_menu=1 and status=1 ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_back_up` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `b`.*,`username` FROM `tp_back_up` `b` LEFT JOIN `tp_admin` `a` ON `a`.`id`=`b`.`user_id` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_back_up` LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: database[D:\phpStudy\WWW\tpshop\application\admin\controller\Base.php:51]
