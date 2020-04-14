@@ -14,7 +14,7 @@ class Admin extends Model
 {
     public function getAdminList($page, $limit)
     {
-        return $this->alias('a')->field('a.*,name')->join("role r", "r.id=a.role_id", "left")->order("a.id", "desc")->page($page, $limit)->select();
+        return $this->alias('a')->field('a.*,name')->join("role r", "r.id=a.role_id", "left")->where("status", 1)->order("a.id", "desc")->page($page, $limit)->select();
     }
 
     public function getAdminListCount($id = 0)
@@ -45,7 +45,7 @@ class Admin extends Model
         if ($id) {
             return $this->where("id", $id)->find();
         }
-        return $this->order("id", "asc")->select();
+        return $this->->where("status", 1)order("id", "asc")->select();
     }
 
     public function editModel($post)
