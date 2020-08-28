@@ -4,7 +4,7 @@
 
 ## 更新
 
-- 202008-28 修复admin/model.admin.php代码
+- 2020-08-28 修复admin/model.admin.php代码
 
 - 2020-04-14 修复账号启用问题 
 
