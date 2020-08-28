@@ -45,7 +45,7 @@ class Admin extends Model
         if ($id) {
             return $this->where("id", $id)->find();
         }
-        return $this->->where("status", 1)order("id", "asc")->select();
+        return $this->where("status", 1)->order("id", "asc")->select();
     }
 
     public function editModel($post)
