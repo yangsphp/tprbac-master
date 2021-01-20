@@ -18,7 +18,7 @@
 
 - 修改public/index.php中的SITE_URL配置
 
-- 修改后端配置文件config.php
+- 修改后端配置文件config.php（tpl_replace_string）
 
 - 添加我的微信（yangyang92428）捐赠10元获取数据库
 
