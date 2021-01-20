@@ -14,6 +14,8 @@
 
 - 下载源码
 
+- 部署虚拟主机
+
 - 修改public/index.php中的SITE_URL配置
 
 - 修改后端配置文件config.php
