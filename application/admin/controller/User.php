@@ -45,7 +45,7 @@ class User extends Controller
             //修改登录时间和ip地址与登录日志
             $adminModel->editModel($update);
             Session::set("user", $admin);
-            $this->redirect(SITE_URL."/public/admin/index");
+			$this->success('登录成功', url("admin/index/index"));
         }
         return $this->fetch();
     }
