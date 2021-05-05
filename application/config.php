@@ -9,6 +9,13 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
+use \think\Request;
+
+$basename = Request::instance()->root();
+if (pathinfo($basename, PATHINFO_EXTENSION) == 'php') {
+    $basename = dirname($basename);
+}
+
 return [
     // +----------------------------------------------------------------------
     // | 应用设置
@@ -142,7 +149,7 @@ return [
         'taglib_end'   => '}',
 
         'tpl_replace_string' => [
-            '__INDEX__' => '/tprbac/public/static/index'
+            '__INDEX__' => $basename.'/static/index'
         ]
     ],
 
