@@ -5,11 +5,19 @@
  * Date: 2020/3/11
  * Time: 15:34
  */
+ 
+ use \think\Request;
+
+$basename = Request::instance()->root();
+if (pathinfo($basename, PATHINFO_EXTENSION) == 'php') {
+    $basename = dirname($basename);
+}
+ 
 
 return [
     'view_replace_str' => [
-        '__PUBLIC__' => SITE_URL . '/public/static/admin',
-        '__IMG__' => SITE_URL . '/public/static',
+        '__PUBLIC__' => $basename.'/static/admin',
+        '__IMG__' => $basename.'/static',
     ],
 
     'template' => [
